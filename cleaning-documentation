@@ -1,0 +1,9 @@
+The rows and columns were obtained from the original dataset using the text to columns feauture.
+The column Dt_Customer was formatted to Date with DD-MM-YYYY format.
+Similarly, all the columns with numeric values were set to the number format and all the columns with characters were changed to the text format.
+The case of all the headers was changed to lower case using =LOWER()
+Deleted blank rows and cells with null entries. 
+1 blank row, 24 null entries in income, and 1 null entry in dt_customer were found which were all then removed.
+Remove duplicates feature was used to remove any existing duplicates. None were found.
+The marital_status column had some strange entries like 'Alone','YOLO', and 'Absurd'. These were all updated to 'Single'.
+While looking at the 2 YOLO entries, it was noticed that both the rows were completely same except for the id and the response. From the observation it looked like 2 entries for the same customer. One of them had 1 for response and the other had 0. I deleted the row with 0 response under the assumption that the customer accepted the offer in the last campaign (i.e response = 1). The person in charge had simply forgotten to delete the old record and had registered the customer again.
