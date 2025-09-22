@@ -1,12 +1,11 @@
-The rows and columns were obtained from the original dataset using the text to columns feauture.
-The column Dt_Customer was formatted to Date with DD-MM-YYYY format.
+The rows and columns were obtained from the original dataset using the text to columns feauture. The delimiter was tab.
+The column Dt_Customer was formatted to DD-MM-YYYY date format.
 Similarly, all the columns with numeric values were set to the number format and all the columns with characters were changed to the text format.
 The case of all the headers was changed to lower case using =LOWER()
-Deleted blank rows and cells with null entries. 
-1 blank row, 24 null entries in income, and 1 null entry in dt_customer were found which were all then removed.
+I deleted blank rows and rows which had cells with null entries. 
+1 complete blank row, 24 null entries in income, and 1 null entry in dt_customer were found which were all then removed.
 Remove duplicates feature was used to remove any existing duplicates. None were found.
-The marital_status column had some strange entries like 'Alone','YOLO', and 'Absurd'. These were all updated to 'Single'.
+The marital_status column had some strange entries like 'Alone','YOLO', and 'Absurd'. These were all updated to 'Single'. The find and replace feature was used.
 Purpose of the response variable - 1 if customer accepted the offer in the last campaign, 0 otherwise.
-While looking at the 2 YOLO entries, it was noticed that both the rows were completely same except for the id and the response. From the observation it looked like 2 entries for the same customer. One of them had 1 for response and the other had 0. The greater id number had 1 as response meaning the customer accepted the offer in the last campaign. 
-So the row with 0 response and the smaller id was most likely an old record which was not needed. Hence, the row was deleted.
-The person in charge had simply forgotten to delete the old record and had registered the customer again.
+While looking at the 2 YOLO entries, it was noticed that both the rows were COMPLETELY same except for the id and the response. From the observation it looked like 2 entries for the same customer. One of them had 1 for response and the other had 0. The greater id number had 1 as response meaning the customer accepted the offer in the last campaign. So, the row with 0 response and the smaller id was most likely an old record of the same customer, which was not needed. Hence, the row was deleted. The person in charge had simply forgotten to delete the old record and had registered the customer again.
+[Duplicate YOLO entries](
