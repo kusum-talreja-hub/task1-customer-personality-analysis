@@ -1,5 +1,5 @@
-# task1-customer-personality-analysis
-This is my task 1 for my internship at Elevate Labs. I had to clean and pre-process the dataset 'Customer Personality Analysis' which was obtained through Kaggle.
+# task1 customer personality analysis
+This is my task 1 for my internship at Elevate Labs. I had to clean and pre-process the dataset 'Customer Personality Analysis' which was obtained from Kaggle.
 <br>
 I used Microsoft Excel to do the data pre-processing.
 <br>
